@@ -3,11 +3,10 @@
 
 function myFunction(a, n) {
   const array = [];
-  for (letter in a) {
+  for (let letter of a) {
     array.push(letter);
   }
-  console.log(array);
-  return array.at(n);
+  return array.at(n-1);
 }
 
 // Test Cases:
